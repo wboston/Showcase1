@@ -135,7 +135,6 @@
     <Content Include="flogo_RGB_HEX-144.png" />
     <Content Include="GitHub-Mark-120px-plus.png" />
     <Content Include="In-2C-128px-R.png" />
-    <Content Include="William2.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -143,6 +142,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\WilliamBoston-Sites - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\WilliamBoston-Sites - Web Deploy1.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
