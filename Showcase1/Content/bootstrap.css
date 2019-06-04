@@ -4211,7 +4211,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     overflow-y: visible;
   }
   .navbar-fixed-top .navbar-collapse,
-  .navbar-static-top .navbar-collapse,
+  .navbar-static-top .navbar-static-bottom .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
@@ -4244,13 +4244,26 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-static-top {
-  z-index: 1000;
-  border-width: 0 0 1px;
+    z-index: 1000;
+    border-width: 0 0 1px;
 }
+
 @media (min-width: 768px) {
-  .navbar-static-top {
-    border-radius: 0;
-  }
+    .navbar-static-top {
+        border-radius: 0;
+    }
+}
+.navbar-static-bottom {
+    z-index:1000;
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 0 0 1px;
+}
+
+@media (min-width: 768px) {
+    .navbar-static-bottom {
+        border-radius: 0;
+    }
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
@@ -5011,6 +5024,24 @@ a.badge:focus {
   margin-bottom: 30px;
   color: inherit;
   background-color: #eee;
+}
+.bg-cover {
+    background-size: cover;
+    color: green;
+    background-position: center center;
+    position: relative;
+    z-index: -2;
+}
+
+.overlay {
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 .jumbotron h1,
 .jumbotron .h1 {

@@ -10,19 +10,27 @@ namespace Showcase1.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Message = "Welcome";
             return View();
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Learn More";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Send me a Note";
+
+            return View();
+        }
+
+        public ActionResult Projects()
+        {
+            ViewBag.Message = "What else do you expect from a programmer";
 
             return View();
         }
